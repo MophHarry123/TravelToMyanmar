@@ -1,0 +1,360 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&display=swap');
+body {
+    background-color: #F4EADE;
+}
+.Nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    
+    border-bottom: 1px solid #D2B48C; /* A soft, sandy border */
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+}
+.navhead {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.mainhead {
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-bottom: 1rem;
+
+    font-weight: 700;        
+    font-size: 2rem;        
+    letter-spacing: 0.1rem;  
+    text-transform: uppercase; 
+    color: #FF8C00;
+    /* text-decoration: underline;
+    text-underline-offset: 0.3rem; */
+}
+
+.servs {
+    margin-top: 0.5rem;
+    color: #905105;
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+    
+    
+    text-decoration: none; 
+    position: relative; 
+    display: inline-block; 
+    padding-bottom: 0.3rem; 
+    margin-right: 10rem;
+}
+.servs::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    
+    width: 0%;     
+    height: 2px;    
+    background-color: #905105; 
+    
+    transition: width 0.3s ease; 
+}
+.servs:hover::after {
+    width: 100%;
+}
+.aboutus {
+    margin-top: 0.5rem;
+    color: #905105;
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+    
+    
+    text-decoration: none; 
+    position: relative; 
+    display: inline-block; 
+    padding-bottom: 0.3rem; 
+}
+
+.aboutus::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    
+    width: 0%;     
+    height: 2px;    
+    background-color: #905105; 
+    
+    transition: width 0.3s ease; 
+}
+
+.aboutus:hover::after {
+    width: 100%;
+}
+
+.Destinations {
+margin-top: 0.5rem;
+    color: #905105;
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+    
+    
+    text-decoration: none; 
+    position: relative; 
+    display: inline-block; 
+    padding-bottom: 0.3rem; 
+    margin-left: 10rem;
+}
+.Destinations::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    
+    width: 0%;     
+    height: 2px;    
+    background-color: #905105; 
+    
+    transition: width 0.3s ease; 
+}
+
+.Destinations:hover::after {
+    width: 100%;
+}
+
+.profile {
+    margin-top: 0.5rem;
+    color: #905105;
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+    
+    
+    text-decoration: none; 
+    position: relative; 
+    display: inline-block; 
+    padding-bottom: 0.3rem; 
+}
+.profile::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    
+    width: 0%;     
+    height: 2px;    
+    background-color: #905105; 
+    
+    transition: width 0.3s ease; 
+}
+
+.profile:hover::after {
+    width: 100%;
+}
+
+.DivBody {
+    display: flex;
+
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(128, 90, 63, 0.5), rgba(130, 87, 54, 0.7)), 
+    url('imgs/pexels-tonywuphotography-5555226.jpg');;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    width: 100%;
+}
+
+.headingtext {
+    font-size: 4rem;
+    color: white;
+    font-family: "Noto Serif", serif;
+}
+.quote2 {
+      font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.gobox {
+    margin-top: 2rem;
+    background-color: #F3BB21;
+    padding: 1rem 3rem;
+    border-radius: 10rem;
+}
+.nav-button {
+
+    padding: 0.1rem 0.1rem;
+    border-radius: 3rem;
+
+    font-weight: 900;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    color: #905105;
+    display: inline-flex;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+    color: white;
+    
+    transform: scale(1.1);
+}
+.gobox:hover {
+    background-color: #d2a019;
+    transform: scale(1.1);
+}
+.hidden-el {
+    opacity: 0;
+    transform: translateY(3rem);
+    
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hidden-el.show-el {
+    opacity: 1;
+    transform: translateY(0);
+}
+.Fdes {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    font-size: 2rem;
+    font-family: 'Prata', sans-serif;
+    color: #4b1319;
+    font-weight: 900;
+}
+.quote {
+    margin-top: 0.5rem;
+    justify-content: center;
+    display: flex;
+
+    color: #4b1319;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-style: italic;
+    font-weight: 100;
+
+}
+
+.TwoBox {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 2.5rem;
+
+    height: 70vh;
+}
+.Box1 {
+
+    margin-left: 3rem;
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 1.5rem;
+    box-shadow: 0 14px 35px rgba(48, 28, 11, 0.25);
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.Box1Bg {
+    background-image:  
+    url('imgs/pexels-the-trvlr-2643896.jpg');;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 65%;
+    border-radius: 1.5rem;
+}
+.Bagan {
+    
+    margin-left: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Prata', sans-serif;
+    font-weight: 900;
+}
+.descript {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    background-color: #ffffff; 
+    padding: 1.2rem 1.5rem 0.5rem 1.5rem;
+
+}
+.descriptext {
+    color: #905105;
+    font-family: "Nunito", sans-serif;
+
+  font-weight: 900;
+  font-style: normal;
+}
+.date {
+    color: #b08012;
+    margin-top: 0.5rem;
+}
+
+.expnowdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.expnowdiv {
+    display: flex;
+    justify-content: center;
+
+    padding: 0 1.5rem 1.5rem 1.5rem; 
+    margin-top: auto; 
+}
+
+.exp {
+width: 100%; 
+    text-align: center; 
+    font-family: "Nunito", sans-serif;
+    color: #905105;
+    font-weight: 700;
+    text-decoration: none;
+    
+    border: 2px solid #F3BB21;
+    padding: 0.6rem 0; 
+    border-radius: 0.5rem; 
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.6s ease, color 0.3s ease;
+}
+
+.expnowdiv:hover .exp {
+    background-color: #905105;
+    color: white;
+    border-color: #905105;
+}
+.Box2 {
+
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 1.5rem;
+    box-shadow: 0 14px 35px rgba(48, 28, 11, 0.25);
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.Box2Bg {
+    background-image:  
+    url('imgs/chin.jpg');;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 65%;
+    border-radius: 1.5rem;
+}
